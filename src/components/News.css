@@ -1,0 +1,38 @@
+/* News Section Styling */
+.news-section {
+    background-color: #f9f9f9; /* change: light background color */
+    padding: 3rem 1.5rem; /* change: adds padding for spacing */
+    
+  }
+  
+  .news-section h1 {
+    font-size: 2rem; /* change: larger font size for the main title */
+    font-weight: bold;
+    color: #333; /* change: dark color for the heading */
+    margin-bottom: 1rem; /* change: space below the title */
+    text-align: center; /* change: centers the title */
+  }
+  
+  .news-section p {
+    font-size: 1.1rem; /* change: slightly larger font size for the description */
+    color: #666; /* change: light gray color for the paragraph */
+    text-align: center; /* change: centers the paragraph text */
+    line-height: 1.6; /* change: line spacing for readability */
+    margin-top: 0; /* change: removes top margin */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .news-section {
+      padding: 2rem 1rem; /* change: reduces padding on smaller screens */
+    }
+  
+    .news-section h1 {
+      font-size: 1.7rem; /* change: reduces font size of the heading */
+    }
+  
+    .news-section p {
+      font-size: 1rem; /* change: reduces font size of the paragraph */
+    }
+  }
+  

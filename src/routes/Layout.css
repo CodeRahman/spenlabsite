@@ -1,0 +1,82 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+    padding: 0.5rem;
+    height: 30px;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 10;
+  }
+
+
+
+  .navbar .site-name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links {
+    margin: 0 1rem;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .links a:hover {
+    color: #ddd;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .navbar.active .nav-list {
+      display: flex; 
+    }
+  
+    .links {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  
+    /* Menu icon */
+    .menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  
+  /* Large Screens - Hide menu icon */
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
+    }
+  }
+  

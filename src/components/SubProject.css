@@ -1,0 +1,66 @@
+/* Project Card Container */
+.SubProject {
+    display: flex; /* change: to align the image and details side by side */
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  
+  /* Project Image Styling */
+  .project-image img {
+    width: 300px; /* change: fixed size for the project image */
+    height: 200px; /* change: fixed size for the project image */
+    object-fit: cover; /* change: makes sure the image maintains aspect ratio */
+    margin-right: 1.5rem; /* change: space between the image and project details */
+  }
+  
+  /* Project Details Styling */
+  .project-details {
+    flex: 1; /* change: ensures project details take up remaining space */
+    display: flex;
+    flex-direction: column; /* change: stacks the details vertically */
+    justify-content: center;
+  }
+  
+  .project-details h2 {
+    font-size: 1.3rem; /* change: larger font size for the project title */
+    font-weight: bold;
+    color: #333; /* change: dark color for the title */
+    margin-bottom: 0.5rem; /* change: adds spacing below the title */
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    color: #666; /* change: lighter color for the description text */
+    line-height: 1.5;
+  }
+  
+  .project-details a {
+    color: #007bff; /* change: blue color for the link */
+    text-decoration: none;
+    margin-left: 0.3rem;
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline; /* change: underline effect on hover */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .SubProject {
+      flex-direction: column; /* change: stacks the image and details vertically on smaller screens */
+      align-items: center; /* change: centers content in the card */
+    }
+  
+    .project-image img {
+      width: 100%; /* change: make image take full width on small screens */
+      max-width: 250px; /* change: max width of the image */
+      margin-right: 0; /* change: no margin between the image and the details */
+      margin-bottom: 1rem; /* change: space between image and details */
+    }
+  
+    .project-details {
+      text-align: center; /* change: centers text in details section */
+    }
+  }
+  

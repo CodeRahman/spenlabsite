@@ -1,0 +1,13 @@
+.Project{
+    background-color: #f4f4f4;
+    padding: 0 2rem;
+}
+
+.projectname{
+    margin-left: 2rem;
+}
+
+.main{
+    min-height: 80vh;
+}
+  
