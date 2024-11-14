@@ -5,29 +5,29 @@ import React, {useEffect, useState } from 'react';
 const Layout = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  //const [navbarColor, setNavbarColor] = useState("red");
+  const [navbarColor, setNavbarColor] = useState("");
 
 
 
   const toggleMenu = () => setMenuOpen(!menuOpen); 
 
-  /*useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setNavbarColor("black"); // change: sets navbar color to black when scrolling
       } else {
-        setNavbarColor("#33ccff"); // change: sets navbar color back to red at the top
+        setNavbarColor(""); // change: sets navbar color back to red at the top
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);*/
+  }, []);
 
 
   return (
     <div>
-     <nav className={`navbar ${menuOpen ? 'active' : ''}`}/*style={{ backgroundColor: navbarColor }}*/>
+     <nav className={`navbar ${menuOpen ? 'active' : ''}`}style={{ backgroundColor: navbarColor }}>
      <div className="site-name">SPEN Lab</div>
      <div className="menu-icon" onClick={toggleMenu}>
         {menuOpen ? '✖' : '☰'} {/* change: toggle between "☰" and "✖" based on menuOpen */}
