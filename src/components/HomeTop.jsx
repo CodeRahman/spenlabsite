@@ -4,7 +4,7 @@ import './HomeTop.css';
 function HomeTop() {
     return (
         <div className="HomeTop">
-            <h1 className="home-name">Southern Miss SPEN Research Lab</h1>
+            <h1 className="home-name">Security and Privacy of Emerging Networks Research Lab</h1>
             <h2>Lab Motto</h2>
             <h1> Welcome to the SPEN Lab at the University of Southern Mississippi </h1>
         </div>
