@@ -1,11 +1,12 @@
 /* Footer Styling */
 .footer {
+  margin-top: auto;
     background-color: #222; /* change: dark background color */
     color: white; /* change: white text color */
     padding: 2rem 1.5rem; /* change: padding for spacing */
     text-align: center; /* change: centers the content */
     bottom: 0;
-    width: 100%;
+    width: 100%;    
   }
   
   .footer-logo h3 {

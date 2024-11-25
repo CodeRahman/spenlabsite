@@ -14,7 +14,6 @@ const App = () => {
       <div className='main'>
         <Layout />
         <HomeTop />
-        <h2 className='projectname'>Projects </h2>
         
         <News />
       </div>
